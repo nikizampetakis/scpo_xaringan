@@ -2,7 +2,13 @@
 
 Minimalist `R` xaringan theme for html presentations using ScPo style/colors.
 
-## Examples
+## Example Title Slide
+
+Here is the title slide:
+
+![](img/ex/title.png)
+
+## Full Example Presentation
 
 Example presentation at [https://scpoecon.github.io/scpo_xaringan/]( https://scpoecon.github.io/scpo_xaringan/). 
 
