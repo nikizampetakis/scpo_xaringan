@@ -170,7 +170,7 @@ blockquote {
 
 /* section divider red */
 .title-slide-section-red {
-  background-color: #cc0033;
+  background-color: #d90502;
   padding-left: 100px;  /* delete this for 4:3 aspect ratio */
 }
 
@@ -207,7 +207,7 @@ blockquote {
 
 
 .title-slide-final h1 {
-  color: #cc0033;
+  color: #d90502;
 }
 
 
@@ -278,7 +278,7 @@ ru-blockquote {
   margin-bottom: 1em;
   margin-left: 40px;
   margin-right: 40px;
-  border-left: solid 10px #cc0033;
+  border-left: solid 10px #d90502;
   background-color: #818181;
   padding: 1em;
   color: #fff;
