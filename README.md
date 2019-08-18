@@ -37,3 +37,15 @@ output:
       in_header: "./libs/partials/header.html"
 ---
 ```
+
+## Offline Usage
+
+* One big drawback is (used to be) that HTML presentations require a working internet connection during the presentation. 
+* It's not always possible to guarantee that. Sigh.
+* There is a great alternative/backup. Just print the HTML slides to PDF with [decktape](https://github.com/astefanutti/decktape)! I.e. you do
+
+    ```
+    decktape index.html presentation.pdf --chrome-arg=--disable-web-security
+    ```
+    to end up with this [PDF](presentation.pdf)
+
