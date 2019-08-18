@@ -1,35 +1,33 @@
-# ru_xaringan
+# scpo_xaringan
 
-Minimalist xaringan theme for html presentations using RU style/colors
+Minimalist `R` xaringan theme for html presentations using ScPo style/colors.
 
 ## Examples
 
-![Title slide](./img/ex/rutgers_showcase.gif)
-
-Example presentation [here](http://www.jvcasillas.com/ru_xaringan/slides/index.html). 
+Example presentation at [https://scpoecon.github.io/scpo_xaringan/]( https://scpoecon.github.io/scpo_xaringan/). 
 
 ## Usage
 
-The Rutgers theme is now part of `xaringan` (as of 3/9/2018). You can 
-use it by downloading the latest version of `xaringan` and adding `rutgers` 
-and `rutgers-fonts` to the `css` call in the yaml front matter: 
+just fork this and edit the front-matter YAML at the start of your Rmd file containing your presentation.
 
 
 ```
 ---
-title: "Title here"
-subtitle: "Sub-title here"
-author: "Your Name"
-date: "Rutgers University </br> `r Sys.Date()`"
+title: "your title"
+subtitle: "subtitle"
+author: "Your name"
+date: "SciencesPo Paris </br> `r Sys.Date()`"
 output:
   xaringan::moon_reader:
     lib_dir: libs
-    css: ["rutgers", "rutgers-fonts"]
+    css: [default, "scpo.css", "scpo-fonts.css"]
     nature:
-      beforeInit: "http://www.jvcasillas.com/ru_xaringan/js/ru_xaringan.js"
+      beforeInit: ["../js/ru_xaringan.js"]
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
       ratio: "16:9"
+    includes:
+      in_header: "./libs/partials/header.html"
 ---
 ```

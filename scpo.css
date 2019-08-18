@@ -2,12 +2,15 @@
 CSS for xaringan slides in RU flavor
 Author: Joseph V. Casillas
 Updated: 03/06/2018
+
+Modified by Florian Oswald for ScPo
+18/08/2019
 */
 
 /* Package defaults that we slightly tweak */
 
 a, a > code {
-  color: #cc0033; /* rgb(249, 38, 114) */
+  color: #d90502; /* rgb(249, 38, 114) */
   text-decoration: none;
 }
 
@@ -79,20 +82,8 @@ blockquote {
   padding-left: 1em;
 }
 
-/* adjust table horizontal spacing */
-th, td {
-    padding:0 15px 0 15px;
-}
+/* removed RU table adjustments*/
 
-/* remove color from tables */
-table {
-  margin: auto;
-  border-top: none;
-  border-bottom: none;
-}
-
-table thead th { border-bottom: none; }
-thead, tfoot, tr:nth-child(even) { background: none; }
 
 /* leave this alone */
 @page { margin: 0; }
@@ -113,10 +104,12 @@ thead, tfoot, tr:nth-child(even) { background: none; }
 /* Title slide */
 
 /* Add image and change bg color */
+
+/* changing background image to ScPo*/
 .title-slide {
-  background-image: url(https://github.com/jvcasillas/ru_xaringan/raw/master/img/logo/ru_shield.png);
-  background-position: 9% 15%;
-  background-size: 55px;
+  background-image: url("./img/logo/ScPo-econ.png");
+  background-position: 9% 30%;
+  background-size: 300px;
   background-color: #fff;
   padding-left: 100px;  /* delete this for 4:3 aspect ratio */
 }
@@ -136,7 +129,7 @@ thead, tfoot, tr:nth-child(even) { background: none; }
 
 /* H2 fonts */
 .title-slide h2 {
-  color: #cc0033;
+  color: #d90502;
   font-size: 35px;
   text-align: left;
   text-shadow: none;
@@ -159,6 +152,16 @@ thead, tfoot, tr:nth-child(even) { background: none; }
 /* Remove slide count */
 .title-slide .remark-slide-number {
   text-shadow: none;
+}
+
+
+/*add logo in footer*/
+.my-footer {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    height: 60px;
+    width: 100%;
 }
 
 /*~~~~~~~~~~~~~~~~~~*/
@@ -196,16 +199,17 @@ thead, tfoot, tr:nth-child(even) { background: none; }
 /*~~~~~~~~~~~~~~~~~~*/
 
 .title-slide-final {
-  background-color: #272822;
-  color: #fff;
+  background-color: #fff;
   padding-left: 100px;
   text-shadow: 0 0 20px #333;
   text-align: center;
 }
 
+
 .title-slide-final h1 {
   color: #cc0033;
 }
+
 
 /*~~~~~~~~~~~~~~~~~~~~*/
 /* Global adjustments */
@@ -218,13 +222,13 @@ thead, tfoot, tr:nth-child(even) { background: none; }
 
 /* Color adjustments for text */
 
-/* Make bold syntax compile to RU-red */
+/* Make bold syntax compile to ScPo-red */
 strong {
-  color: #cc0033;
+  color: #d90502;
 }
 
-.RUred {
-  color: #cc0033;
+.ScPored {
+  color: #d90502;
 }
 
 /* Add blue tag */
@@ -255,7 +259,7 @@ strong {
 
 /* Color adjustments to headers */
 h1 {
-  color: #cc0033;
+  color: #d90502;
 }
 
 h3 {
