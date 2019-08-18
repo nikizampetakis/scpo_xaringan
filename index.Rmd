@@ -384,13 +384,13 @@ remark.macros.scale = function (percentage) {
 - ...we can use the markdown call to resize images...
 
 ```md
-![:scale 25%](./img/logo/ScPo-Econ.png)
+![:scale 25%](./img/logo/ScPo-econ.png)
 ```
 
 - These calls can also be put inside html divs so as to control where they appear. 
 
 <div align="center">
-![:scale 20%](./img/logo/ScPo-Econ.png)
+![:scale 20%](./img/logo/ScPo-econ.png)
 </div>
 
 - All we need to do is include `beforeInit: "macros.js"` under nature in our YAML front matter
@@ -501,8 +501,8 @@ Here is an example:
 
 |                                                                                                            |                                   |
 | :--------------------------------------------------------------------------------------------------------- | :-------------------------------- |
-| <a href="mailto:florian.oswald@sciencespo.fr">.RUred[<i class="fa fa-paper-plane fa-fw"></i>]               | florian.oswald@sciencespo.fr       |
-| <a href="https://github.com/ScPoEcon/ru_xaringan/slides/index.html">.RUred[<i class="fa fa-link fa-fw"></i>] | ScPoEcon/ru_xaringan/slides |
-| <a href="http://twitter.com/ScPoEcon">.RUred[<i class="fa fa-twitter fa-fw"></i>]                          | @ScPoEcon                         |
-| <a href="http://github.com/ScPoEcon">.RUred[<i class="fa fa-github fa-fw"></i>]                          | @ScPoEcon                       |
+| <a href="mailto:florian.oswald@sciencespo.fr">.ScPored[<i class="fa fa-paper-plane fa-fw"></i>]               | florian.oswald@sciencespo.fr       |
+| <a href="https://scpoecon.github.io/scpo_xaringan">.ScPored[<i class="fa fa-link fa-fw"></i>] | slides |
+| <a href="http://twitter.com/ScPoEcon">.ScPored[<i class="fa fa-twitter fa-fw"></i>]                          | @ScPoEcon                         |
+| <a href="http://github.com/ScPoEcon">.ScPored[<i class="fa fa-github fa-fw"></i>]                          | @ScPoEcon                       |
 
